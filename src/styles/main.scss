@@ -1,15 +1,26 @@
 * {
     box-sizing: border-box;
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #aaa;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 4px;
+    }
 }
 
 body {
-    padding: 0;
+    padding: 1vw 0 0 0;
     margin: 0;
     height: 100vh;
+    overflow: hidden;
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background: #e8eaee;
     font-family: 'Apercu', 'arial';
 }

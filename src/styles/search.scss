@@ -1,16 +1,16 @@
 .search {
     background: white;
     padding: 1vw 1.875vw;
-    border-radius: 1.563vw;
-    width: 53.750vw;
+    width: 82vw;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     input {
-        width: 46vw;
+        width: 66vw;
         padding: 1vw 1.875vw;
         padding-left: 4.531vw;
-        font-size: 1.563vw;
+        font-size: 1vw;
         font-weight: 700;
         background: #F2F4F8;
         border: none;
@@ -21,11 +21,42 @@
         transform: translateX(1vw);
     }
     button {
+        width: 14vw;
         padding: 1vw 1.875vw;
         background: black;
         color: white;
         border: none;
-        font-size: 1.563vw;
-        font-weight: 700;
+        font-size: 1vw;
+        font-weight: 400;
+    }
+    .pagination {
+        width: 20vw;
+        position: absolute;
+        bottom: 2vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        li {
+            width: 10vw;
+            padding: 0.5vh 0;
+            margin: 0 auto;
+            font-size: 1vw;
+            text-align: center;
+            button {
+                padding: 0.2vw 0;
+                width: 60%;
+                background: white;
+                color: black;
+                border: 1px solid black;
+                cursor: pointer;
+                font-weight: 600;
+                &:hover {
+                    background: #ddd;
+                }
+            }
+        }
     }
 }
